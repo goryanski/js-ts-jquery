@@ -1,0 +1,32 @@
+.nearby-places-block {
+    .block-style();
+    background-color: @background-default-color;
+    & h2 {
+        .h2-style();
+    }
+    & .places {
+        display: flex;
+        justify-content: space-evenly;
+        & div div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 25px;
+            background-color: @background-main-color;
+        }
+        & div:last-child {
+            margin-bottom: 30px;
+        }
+        & .degrees {
+            font-size: 22px;
+        }
+        & .icon {
+            margin: 0;
+        }
+    }
+    & .not-found {
+        margin-top: 20px;
+        padding-bottom: 40px;
+        text-align: center;
+    }
+}

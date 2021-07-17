@@ -1,0 +1,121 @@
+@media (max-width: 850px) {
+    .nearby-places-block .places {
+        display: block;
+        padding-bottom: 20px;
+    }
+    .five-day-forecast-block table {
+        font-size: 14px;
+        & td {
+            padding: 10px;
+        }
+        & div {
+            & p:first-child {
+                font-size: 14px;
+            }
+            & p:nth-child(4) {
+                font-size: 14px;
+            }
+            & img {
+                width: 70%;
+            }
+        }
+    }
+}
+@media (max-width: 720px) {
+    .hourly-weather-block table {
+        font-size: 13px;
+        & .images td {
+            width: 50%;
+        }
+        & td {
+            padding: 12px;
+        }
+    }
+    .current-weather-block .block-bottom .weather-img-description {
+        font-size: 14px;
+    }
+}
+@media (max-width: 580px) {
+    header .header-top h1 {
+        font-size: 16px;
+        margin: 40px 10px;
+    }
+    header nav p {
+        font-size: 16px;
+    }
+    .current-weather-block {
+        margin: 20px 10px 0;
+        & .block-top {
+            & h2 {
+                margin-left: 10px;
+                font-size: 16px;
+            }
+            & .current-date {
+                font-size: 16px;
+                margin-right: 10px;
+            }
+        }
+    }
+    .current-weather-block .block-bottom {
+        display: block;
+        text-align: center;
+    }
+    .hourly-weather-block {
+        margin: 20px 10px 0;
+        & h2 {
+            font-size: 16px;
+            margin-left: 10px;
+        }
+        & table {
+            font-size: 10px;
+            & .images td {
+                width: 30%;
+            }
+            & td {
+                padding: 5px;
+            }
+        }
+    }
+    .nearby-places-block {
+        margin: 20px 10px 0;
+        & h2 {
+            font-size: 16px;
+            margin-left: 10px;
+        }
+        & .places {
+           font-size: 12px;
+           & .degrees {
+            font-size: 16px;
+           }
+           & .icon img {
+               width: 70%;
+           }
+        }
+    }
+    .five-day-forecast-block {
+        margin: 20px 10px 0;
+        & table {
+            font-size: 10px;
+            & td {
+                padding: 5px;
+            }
+            & div {
+                & p:first-child {
+                    font-size: 10px;
+                }
+                & p:nth-child(2) {
+                    color: @text-default-color;
+                }
+                & p:nth-child(4) {
+                    font-size: 10px;
+                }
+                & img {
+                    width: 50%;
+                }
+                & p:last-child {
+                    font-size: 8px;
+                } 
+            }
+        }
+    }
+}

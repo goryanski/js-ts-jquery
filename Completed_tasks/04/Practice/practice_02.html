@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+        * {
+            --bckg-color: #ffd36d;
+        }
+        .task-color {
+            color: #ff0000;
+        }
+        .hidden-element {
+            display: none;
+        }
+
+
+         /*#region  to task 2*/
+        .tree-container {
+            width: 200px;
+            padding: 30px;
+            background-color: var(--bckg-color);
+        }
+        .tree-container li {
+            padding-bottom: 8px;
+        }
+        .disks ul li {
+            font-weight: normal;
+            cursor: pointer;
+        }
+        .disks > li.disk:hover {
+            font-weight: bold;
+            cursor: pointer;    
+        }
+        .disks ul li:hover {
+            font-weight: bold;
+        }
+        /*#endregion  to task 2*/
+
+        /*#region  to task 3*/
+        .books-container {
+            width: 400px;
+            padding: 30px;
+            background-color: var(--bckg-color);
+            user-select: none; 
+        }
+        .books-container li {
+            padding: 5px;
+        }
+        .books-container li:hover {
+            cursor: pointer;
+        }
+        .selected-item {
+            background-color: rgb(255, 145, 0);
+        }
+        /*#endregion  to task 3*/
+
+        /*#region  to task 4*/
+        .text-editor {
+            width: 400px;
+            padding: 30px;
+            background-color: var(--bckg-color);
+        }
+        .text-editor .text-block {
+            width: 300px;
+            height: 200px;
+            padding: 10px;
+        }
+        /*#endregion  to task 4*/
+
+        /*#region  to task 5*/
+        table {
+            border-collapse: collapse;
+            background-color: var(--bckg-color);
+        }
+        td, th{
+            width: 160px; 
+            height:70px; 
+            border: solid 1px silver; 
+            text-align:center;
+        }
+        th:hover{
+            background-color: #ff9100;
+        }
+        /*#endregion  to task 5*/
+
+         /*#region  to task 6*/
+         #stretch-block {
+            background-color: var(--bckg-color);
+            height: 100px;
+            width: 400px;
+            padding: 30px;
+            position: relative;
+            margin-bottom: 500px;
+        }
+        #stretch-control {
+            background-color: rgb(180, 180, 180);
+            bottom: 0;
+            right: 0;
+            cursor: se-resize;
+            height: 20px;
+            width: 20px;
+            position: absolute;
+        }
+
+
+          /*#endregion  to task 6*/
+
+</style>
+<body>
+    <h1 class="task-color">Practice 2:</h1>
+
+    <!-- #region  to task 1-->
+    <h3 class="task-color">Task 1:</h3>
+
+    <ul class="links-container">
+        <li><a href="#">index.html</a></li>
+        <li><a href="#">http://google.com</a></li>
+        <li><a href="#">https://itstep.org</a></li>
+        <li><a href="#">https://mystat.itstep.org</a></li>
+        <li><a href="#">/images/cat.jpg</a></li>
+        <li><a href="#">/local/path</a></li>
+    </ul>
+    <!-- #endregion -->
+
+    <!-- #region  to task 2-->
+    <h3 class="task-color">Task 2:</h3>
+
+    <ul class="tree-container">
+        <li>This PC           
+            <ul class="disks">
+                <li class="disk">Local Disk (C:)
+                    <ul class="disk-folders hidden-element">
+                        <li>Program files</li>
+                        <li>Users</li>
+                        <li>Windows</li>
+                    </ul>
+                </li>
+                <li class="disk">Local Disk (D:)
+                    <ul class="disk-folders hidden-element">
+                        <li>New folder 1</li>
+                        <li>New folder 2</li>
+                        <li>New folder 3</li>
+                    </ul>
+                </li>
+                <li class="disk">Local Disk (E:)
+                    <ul class="disk-folders hidden-element">
+                        <li>films</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <!-- #endregion -->
+
+    <!-- #region  to task 3-->
+    <h3 class="task-color">Task 3:</h3>
+    
+    <ol class="books-container">
+        <li>In Search of Lost Time by Marcel Proust</li>
+        <li>Ulysses by James Joyce</li>
+        <li>Don Quixote by Miguel de Cervantes</li>
+        <li>One Hundred Years of Solitude by Gabriel Garcia Marquez</li>
+        <li>The Great Gatsby by F. Scott Fitzgerald</li>
+        <li>Moby Dick by Herman Melville</li>
+        <li>War and Peace by Leo Tolstoy</li>
+    </ol>
+    <!-- #endregion -->
+
+    <!-- #region  to task 4-->
+    <h3 class="task-color">Task 4:</h3>
+    <div class="text-editor">
+        <div>
+            <p>Press Ctrl+E for edit text.</p>
+            <p>Press Ctrl+S for save text.</p>
+        </div>
+        <hr>
+        <div class="text-block text-to-edit-div"></div>
+        <textarea class="text-block text-to-edit-textarea hidden-element"></textarea>
+    </div>
+    <!-- #endregion -->
+
+    <!-- #region  to task 5-->
+    <h3 class="task-color">Task 5:</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Age</th> 
+                <th>Company</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Mark</td> 
+                <td>Zuckerberg</td> 
+                <td class="numbers-column">34</td> 
+                <td>Facebook</td>
+            </tr>
+            <tr>
+                <td>Larry</td> 
+                <td>Page</td> 
+                <td class="numbers-column">45</td> 
+                <td>Google</td>
+            </tr>
+            <tr>
+                <td>Timothy</td> 
+                <td>Cook</td> 
+                <td class="numbers-column">57</td> 
+                <td>Apple</td>
+            </tr>
+            <tr>
+                <td>Bill</td> 
+                <td>Gates</td> 
+                <td class="numbers-column">62</td> 
+                <td>Microsoft</td>
+            </tr>
+        <tbody>
+    </table>
+    <!-- #endregion -->
+
+    <!-- #region to task 6-->
+    <h3 class="task-color">Task 6:</h3>
+    <div id="stretch-block">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique optio quaerat voluptate error nesciunt veniam amet. Perferendis unde ducimus est accusamus tempore sunt voluptate delectus fugit quam dolore. Consequuntur, veritatis.</p>
+        <div id="stretch-control"></div>
+      </div>
+
+
+     <!-- #endregion -->
+
+    <script src="js/practice_02.js"></script>
+</body>
+</html>

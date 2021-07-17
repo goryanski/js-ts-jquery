@@ -1,0 +1,42 @@
+.current-weather-block {
+    .block-style();
+    padding-bottom: 40px;
+    & .block-top {
+        display: flex;
+        justify-content: space-between;
+        color: @text-header-color;
+        margin-bottom: 30px;
+        padding-top: 5px;
+        & h2 {
+            margin-left: 40px;
+        }
+        & .current-date {
+            font-weight: bold;
+            font-size: 20px;
+            margin-right: 40px;
+        }
+    }
+    & .block-bottom {
+        display: flex;
+        justify-content: space-around;
+        color: @text-default-color;
+        padding-bottom: 30px;
+        & .weather-img-description {
+            text-align: center;
+            font-size: 28px;
+            margin: 0;
+        }
+        & .temperature {
+            font-size: 42px;
+            color: @text-main-color;
+            margin-bottom: 0;
+            margin-top: 20px;
+        }
+        & .extra-info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+}
+

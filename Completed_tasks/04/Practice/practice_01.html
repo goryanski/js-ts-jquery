@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            --bckg-color: #9acd32;
+        }
+        .task-color {
+            color: #ff0000;
+        }
+        .hidden-element {
+            display: none;
+        }
+
+        /*#region  to task 1*/
+        .random-block {
+            width: 300px;
+            height: 300px;
+            margin: 0 auto;
+            background-color: var(--bckg-color);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .random-display {
+            height: 50px;
+            font-size: 30px;
+        }
+        .random-button {
+            width: 200px;
+            height: 30px;
+        }
+        /*#endregion  to task 1*/
+
+        /*#region  to task 2*/
+        .mouse-tracker {
+            height: 100vh;
+            width: 100%;
+            background-color: var(--bckg-color);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .mouse-tracker p {
+            height: 50px;
+            font-size: 30px;
+        }
+        /*#endregion  to task 2*/
+        
+        /*#region  to task 3*/
+        .hide-block {
+            width: 300px;
+            height: 200px;
+            margin: 0 auto;
+            background-color: var(--bckg-color);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .hide-button {
+            width: 200px;
+        }
+        .hide-text {
+            text-align: center;
+            margin: 20px;
+        }
+        /*#endregion  to task 3*/
+        
+        /*#region  to task 4*/
+        .toggle-block {
+            width: 600px;
+            height: 300px;
+            margin: 0 auto;
+            background-color: var(--bckg-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .toggle-block-menu {
+            width: 30%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #749c24;
+        }
+        .toggle-block-menu p {
+            width: 100%;
+            padding: 10px;
+            font-size: 22px;
+            text-align: center;
+            box-sizing: border-box;
+        }
+        .toggle-block-menu p:hover {
+            background-color: #9acd32;
+            cursor: pointer;
+        }
+        .toggle-block-text {
+            width: 70%;
+            display: flex; 
+            justify-content: center;
+            margin: 20px;
+        }
+        /*#endregion  to task 4*/
+
+        /*#region  to task 5*/
+        .news-container > div {
+            background-color: var(--bckg-color);
+            padding: 20px 35px;
+        }
+        .news-container > div div:last-child {
+            padding-bottom: 25px;
+            border-bottom: 1px solid black;
+        }
+        .news-head {
+            display: flex;
+            justify-content: space-between;
+        }
+        .news-container button {
+            width: 120px;
+            height: 30px;
+        }
+        /*#endregion  to task 5*/
+        
+        /*#region  to task 6*/
+        .progress-container {
+            width: 300px;
+            height: 300px;
+            margin: 0 auto;
+            background-color: var(--bckg-color);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .progress-container progress, .progress-container button {
+            margin: 20px;
+            height: 30px;
+            
+        }
+        .progress-container progress {
+            height: 80px;
+            width: 250px;
+        }
+        /*#endregion  to task 5*/
+
+    </style>
+</head>
+<body>
+    <!-- #region  to task 1-->
+    <h1 class="task-color">Practice 1:</h1>
+    <h3 class="task-color">Task 1:</h3>
+    <div class="random-block">
+        <p>Random Number:</p>
+        <p class="random-display"></p>
+        <button class="random-button">Generate random number</button>
+    </div>
+    <!-- #endregion -->
+
+    <!-- #region  to task 2-->
+    <h3 class="task-color">Task 2:</h3>
+    <div class="mouse-tracker">
+        <p class="coordX-display"></p> 
+        <p class="coordY-display"></p> 
+        <p class="button-name-display"></p> 
+    </div>
+    <!-- #endregion -->
+
+    <!-- #region  to task 3-->
+    <h3 class="task-color">Task 3:</h3>
+    <div class="hide-block">
+        <button class="hide-button">Hide/Show text</button>
+        <p class="hide-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur praesentium earum sint cupiditate, ipsum veniam enim dicta consequatur sit, esse ducimus alias eaque iure maiores excepturi molestiae natus ipsa labore.</p>
+    </div>
+    <!-- #endregion -->
+
+    <!-- #region  to task 4-->
+    <h3 class="task-color">Task 4:</h3>
+    <div class="toggle-block">
+        <div class="toggle-block-menu">
+            <p class="tab-html">HTML</p>
+            <p class="tab-css">CSS</p>
+            <p class="tab-js">JS</p>
+        </div>
+        <div class="toggle-block-text">Click left tabs to read info!</div>
+    </div>
+    <!-- #endregion -->
+
+    <!-- #region  to task 5-->
+    <h3 class="task-color">Task 5:</h3>
+    <div class="news-container">
+        <div class="news-1">
+            <div class="news-head">
+                <h2>What is Lorem?</h2>
+                <button class="btn-news-1">X [remove]</button>
+            </div>
+            <div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur pariatur in magnam praesentium modi id deserunt dolorum blanditiis non! Amet, exercitationem suscipit et quia consequatur libero voluptates vel nostrum fugiat?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur pariatur in magnam praesentium modi id deserunt dolorum blanditiis non! Amet, exercitationem suscipit et quia consequatur libero voluptates vel nostrum fugiat?
+            </div>
+        </div>
+        <div class="news-2">
+            <div class="news-head">
+                <h2>When does it start?</h2>
+                <button class="btn-news-2">X [remove]</button>
+            </div>
+            <div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur pariatur in magnam praesentium modi id deserunt dolorum blanditiis non! Amet, exercitationem suscipit et quia consequatur libero voluptates vel nostrum fugiat?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur pariatur in magnam praesentium modi id deserunt dolorum blanditiis non! Amet, exercitationem suscipit et quia consequatur libero voluptates vel nostrum fugiat?
+            </div>
+        </div>
+        <div class="news-3">
+            <div class="news-head">
+                <h2>Why do we use it?</h2>
+                <button class="btn-news-3">X [remove]</button>
+            </div>
+            <div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur pariatur in magnam praesentium modi id deserunt dolorum blanditiis non! Amet, exercitationem suscipit et quia consequatur libero voluptates vel nostrum fugiat?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur pariatur in magnam praesentium modi id deserunt dolorum blanditiis non! Amet, exercitationem suscipit et quia consequatur libero voluptates vel nostrum fugiat?
+            </div>
+        </div>
+    </div>
+    <!-- #endregion -->
+
+    <!-- #region  to task 6-->
+    <h3 class="task-color">Task 6:</h3>
+    <div class="progress-container">
+        <progress max="100" value="25"></progress>
+        <button class="btn-add-progress">Add 5 percent</button>
+    </div>
+     <!-- #endregion -->
+
+    <script src="js/practice_01.js"></script>
+</body>
+</html>

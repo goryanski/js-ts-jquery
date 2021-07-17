@@ -1,0 +1,52 @@
+header {
+    & .header-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: @background-default-color;
+        & h1 {
+            color: @text-header-color;
+            font-size: 30px;
+            margin-left: 40px;
+        }
+        & .input-container {
+            position: relative;
+            height: 20px;
+            margin-right: 40px;
+            & input {
+                width: 200px;
+                height: 20px;
+            }
+            & i {
+                position: absolute;
+                top: 4px;
+                right: 9px;
+                color: @text-color-opacity;
+                &:hover {
+                    color: @text-header-color;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    & nav {
+        display: flex;
+        background-color: #404040;
+        & p {
+            padding: 10px 25px;
+            margin: 0;
+            color: #dfdfdf;
+            font-size: 25px;
+        }
+        & p:hover {
+            cursor: pointer;
+        }
+        & p:first-child {
+            margin-left: 40px;
+        }
+    }
+}
+.selected-foreecast {
+    border: 2px solid rgb(88, 88, 88);
+    border-bottom: 5px solid @text-header-color;
+}

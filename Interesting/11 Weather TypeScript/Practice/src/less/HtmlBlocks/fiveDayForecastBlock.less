@@ -1,0 +1,37 @@
+.five-day-forecast-block {
+    background-color: #ededed;
+    box-sizing: border-box;
+    .block-style(); 
+    & table {
+        width: 100%;
+        border-collapse: collapse;
+        text-align: center;
+        & td {
+            padding: 20px;
+            border-right: 4px solid #d7d7d7;
+        }
+        & td:hover {
+            background-color: @background-default-color;
+            cursor: pointer;
+        }
+        & td:last-child {   
+            border-right: none;
+        }
+        & div {
+            & p:first-child {
+                color: @text-header-color;
+                font-weight: bold;
+                font-size: 18px;
+            }
+            & p:nth-child(2), & p:last-child {
+                color: @text-default-color;
+            }
+            & p:nth-child(4) {
+                font-size: 25px;
+            }
+        }
+    }
+}
+.selected-day {
+    background-color: @background-default-color;
+}
